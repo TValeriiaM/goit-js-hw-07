@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #2e2f42;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.item {
+    border-radius: 8px;
+    padding: 16px;
+    width: 392px;
+    height: 264px;
+    background: #f6f6fe;
+    margin-bottom: 24px;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+}
+
+li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+}
+
+img {
+    width: 360px;
+    height: 300px;
+} 
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+button {
+    background-color: #4D5AE5;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    width: 86px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change-color {
+    border-radius: 8px;
+        padding: 8px 16px;
+        width: 148px;
+        height: 40px;
+        background: #4e75ff;
+}
+
+p {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+}
+
+#controls {
+    display: flex;
+    gap: 24px;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+    background: #f6f6fe;
+}
+
+#boxes {
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 160px;
+    background: #f6f6fe;
+    margin-top: 24px;
+}
+
+[data-create] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #4e75ff;
+}
+
+[data-destroy] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #ff4e4e;
+}
+
+[type="number"] {
+    border: 1px solid #808080;
+        border-radius: 8px;
+        padding: 8px 72px;
+        width: 150px;
+        height: 40px;
+        margin-top: 0;
+}
