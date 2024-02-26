@@ -131,7 +131,7 @@ p {
     border-radius: 8px;
     padding: 32px;
     width: 486px;
-    height: 160px;
+    min-height: 160px;
     background: #f6f6fe;
     margin-top: 24px;
 }
@@ -155,7 +155,6 @@ p {
 [type="number"] {
     border: 1px solid #808080;
         border-radius: 8px;
-        padding: 8px 72px;
         width: 150px;
         height: 40px;
         margin-top: 0;

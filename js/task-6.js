@@ -6,69 +6,33 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-// const inputNumb = document.querySelector('input');
-// const buttonCreate = document.querySelector('[data-create]');
-// const buttonDestroy = document.querySelector('[data-destroy]');
-// const boxes = document.querySelector('#boxes');
-// const ctrls = document.querySelector('#controls');
-// let inptVal;
-// buttonCreate.addEventListener('click', makeBoxes);
-
-// function makeBoxes() {
-//   inputNumb.focus();
-//   if (inputNumb.value > 0) {
-//     createBoxes(inputNumb.value);
-//     inputNumb.value = '';
-//   } else {
-//     alert(`Write number from 1 to 100`);
-//   }
-// }
-
-// buttonDestroy.addEventListener('click', deleteBoxes);
-
-// let boxsize;
-// let newDiv;
-
-// function deleteBoxes() {
-//   inputNumb.value = '';
-//   boxes.innerHTML = '';
-// }
-
-// function createBoxes(amount) {
-//   boxes.innerHTML = '';
-//   boxsize = 30;
-//   for (let i = 1; i <= amount; i += 1) {
-//     newDiv = `<div style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
-//     boxes.insertAdjacentHTML('beforeend', newDiv);
-//     boxsize += 10;
-//   }
-// }
-
-const create = document.querySelector('[data-create]');
-const destroy = document.querySelector('[data-destroy]');
-const txtInpt = document.querySelector('input');
+const inputNumb = document.querySelector('input');
+const buttonCreate = document.querySelector('[data-create]');
+const buttonDestroy = document.querySelector('[data-destroy]');
 const boxes = document.querySelector('#boxes');
 const ctrls = document.querySelector('#controls');
 
-let inptVal;
+buttonCreate.addEventListener('click', makeBoxes);
 
-create.addEventListener('click', () => {
-  txtInpt.focus();
-  if (txtInpt.value > 0 && txtInpt.value < 101) {
-    createBoxes(txtInpt.value);
-    txtInpt.value = '';
+function makeBoxes() {
+  inputNumb.focus();
+  if (inputNumb.value >= 1 && inputNumb.value <= 100) {
+    createBoxes(inputNumb.value);
+    inputNumb.value = '';
   } else {
-    alert('Amount is not correct');
+    alert(`Write number from 1 to 100`);
   }
-});
+}
+
+buttonDestroy.addEventListener('click', deleteBoxes);
 
 let boxsize;
 let newDiv;
 
-destroy.addEventListener('click', () => {
-  txtInpt.value = '';
+function deleteBoxes() {
+  inputNumb.value = '';
   boxes.innerHTML = '';
-});
+}
 
 function createBoxes(amount) {
   boxes.innerHTML = '';
