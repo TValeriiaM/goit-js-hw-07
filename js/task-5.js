@@ -15,4 +15,5 @@ button.addEventListener('click', handleClick);
 function handleClick() {
   spanColor.textContent = getRandomHexColor();
   bodyColor.style.backgroundColor = getRandomHexColor();
+  spanColor.textContent = bodyColor.style.backgroundColor;
 }
